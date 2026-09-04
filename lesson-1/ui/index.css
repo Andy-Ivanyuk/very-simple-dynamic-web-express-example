@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  line-height: 1.5;
+  padding: 1.5rem 3rem;
+  background-color: #f5f7f7;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0.3em;
+  margin-bottom: 0.7em;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1rem;
+}
+.header {
+  text-align: center;
+}
+.article {
+  transition: 0.2s;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.article__text {
+  flex: 1;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.notice {
+  background-color: #eec4c4;
+  font-weight: bold;
+  grid-column: 1 / 3;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+}
+
+.article:hover {
+  transform: translateY(-3px);
+  border-color: blueviolet;
+}
+.detail {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.comment-form > .comment-form--body {
+  display: flex;
+  gap: 1rem;
+}
+.comment-form > .comment-form--body > textarea {
+  flex: 1;
+}
+.comment-form > .comment-form--body > button {
+  width: 3rem;
+}
+
+#comment-status {
+  color: red;
+}

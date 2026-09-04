@@ -1,0 +1,14 @@
+{
+  "name": "dev-notes-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Layered JSON API for the Dev Notes lecture: controller -> service -> data-access",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
